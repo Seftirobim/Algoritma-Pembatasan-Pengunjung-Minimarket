@@ -208,7 +208,12 @@ while True:
       if kapasitas_sekarang == 3 :
          print(drawLine("="))
          print(f"Sepertinya tersisa pegawai saja {kapasitas_sekarang} orang")
-         break   
+         break
+      elif kapasitas_sekarang == 0 :
+         print(drawLine("="))
+         print(f"Sepertinya Toko tutup")
+         print(f"Bye !")
+         break    
       elif kapasitas_sekarang < 0 :
          print(drawLine("="))
          print(f"Sepertinya Anda keliru")
